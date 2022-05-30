@@ -1,3 +1,7 @@
 # Curso-Practico-de-JavaScript-con-Platzi
 
-# Cursos
+# Primer Taller:
+- Primer paso: Definir formulas
+- Segundo paso: Implementar las formulas en JS
+- Tercer paso: Crear funciones
+- Cuarto paso: Integar JS con HTML
