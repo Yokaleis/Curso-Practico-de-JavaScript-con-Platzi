@@ -1,47 +1,31 @@
-console.log("Encapsulando codigo en funciones");
+console.log("Interactuando con HTML");
 
 //Cuadrado
 
-//Calculando el perimetro del triangulo
 function perimetroCuadrado(lado) {
     return lado * 4;
 }
 perimetroCuadrado();
 
-//Calculando el area del cuadrado
 function areaCuadrado(lado) {
     return lado **2;
 }
-areaCuadrado();
 
-//Triangulo
+//Calculando el perimetro del cuadrado
+function calcularPerimetro() {
+    const input = document.getElementById("InputCuadrado");//Capturamos lo que escribieron en el HTML
+    const value = input.value;
 
-//Calculando el perimetro del triangulo
-function perimentroTriangulo(ladoUno, ladoDos, base){
-    return ladoUno + ladoDos + base;
+    //Perimero Cuadrado
+    const perimetro = perimetroCuadrado(value);
+    alert(perimetro);
 }
+//Calculando el area del cuadrado
+function calcularArea() {
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value; //Capturamos lo que escribieron en el HTML
 
-//Calculando el area del triangulo
-function areaTriangulo(base, altura){
-    return (base * altura) / 2;
+    //Area Cuadrado
+    const area = areaCuadrado(value);
+    alert(area);
 }
-
-//Circulo
-const pi = Math.PI;
-
-//Calculando el diametro del circulo
-function diametroCirculo (radio){
-    return radio * 2;
-}
-
-//Calculando el perimetro del circulo
-function perimeroCirculo (radio) {
-    const diametro = diametroCirculo (radio);
-    return diametro * pi;
-}
-
-//Calculando el area del circulo
-function areaCirculo (radio){
-    return (radio * radio) * pi;
-}
-
