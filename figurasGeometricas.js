@@ -1,51 +1,47 @@
-console.log("Medidad de figuras geometricas");
-
-console.group("Cuadrado");
+console.log("Encapsulando codigo en funciones");
 
 //Cuadrado
-const ladoCuadrado = 5;
-console.log("Los lados del cuadrado miden: " + ladoCuadrado + " Centimentros");
 
-const perimetroCuadrado = ladoCuadrado * 4;
-console.log("El perimentro del cuadrado mide: " + perimetroCuadrado + " Centimentros");
+//Calculando el perimetro del triangulo
+function perimetroCuadrado(lado) {
+    return lado * 4;
+}
+perimetroCuadrado();
 
-const areaCuadrado = ladoCuadrado * ladoCuadrado;
-console.log("El area del cuadrado mide: " + areaCuadrado + " Centimentros cuadrados");
-
-console.groupEnd();
+//Calculando el area del cuadrado
+function areaCuadrado(lado) {
+    return lado **2;
+}
+areaCuadrado();
 
 //Triangulo
-console.group("Triangulo");
-const ladoUno = 6;
-const ladoDos = 6;
-const base = 4;
-const altura = 5.5;
-console.log("Los lados del triangulo miden: " 
-    + "Lado Uno: " + ladoUno + " Centimentros, "
-    + "Lado Dos: " + ladoDos + " Centimentros, "
-    + "Base: "     + base    + " Centimentros"
-    + "Y la altura: "        + altura    + " Centimentros"
-);
-const perimentroTriangulo = ladoUno + ladoDos + base;
-console.log("El perimentro del triangulo mide: " + perimentroTriangulo + " Centimentros");
 
-const areaTriangulo = (base * altura) / 2;
-console.log("El area del triangulo mide: " + areaTriangulo + " Centimentros cuadrados");
+//Calculando el perimetro del triangulo
+function perimentroTriangulo(ladoUno, ladoDos, base){
+    return ladoUno + ladoDos + base;
+}
 
-console.groupEnd();
-
+//Calculando el area del triangulo
+function areaTriangulo(base, altura){
+    return (base * altura) / 2;
+}
 
 //Circulo
-console.group("Circulo");
-const radio = 4;
-const diametro = radio * 2;
 const pi = Math.PI;
-const perimeroCirculo = diametro * pi;
-const areaCirculo = (radio **2) * pi;
-console.log("El radio del circulo: " 
-    + radio        + " Centimentros, "
-    + "Su PI es: " + pi 
-    + "el perimetro es : " + perimeroCirculo + " Centimentros "
-    + "y el area es : "    + areaCirculo     + " Centimentros cuadrados"
-);
-console.groupEnd();
+
+//Calculando el diametro del circulo
+function diametroCirculo (radio){
+    return radio * 2;
+}
+
+//Calculando el perimetro del circulo
+function perimeroCirculo (radio) {
+    const diametro = diametroCirculo (radio);
+    return diametro * pi;
+}
+
+//Calculando el area del circulo
+function areaCirculo (radio){
+    return (radio * radio) * pi;
+}
+
