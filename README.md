@@ -6,3 +6,5 @@
 - Tercer paso: Crear funciones
 - Cuarto paso: Integar JS con HTML
 - Quinto paso: Crear formulario
+![Image text](https://github.com/Yokaleis/Curso-Practico-de-JavaScript-con-Platzi/blob/main/img/Captura%20web_1-6-2022_212429_.jpeg)
+
