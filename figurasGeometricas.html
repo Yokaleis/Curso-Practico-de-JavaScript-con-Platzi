@@ -5,24 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras Geometricas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="header-ui">
         <h1>Figuras Geometricas</h1>
         <p>Taller #1</p>
     </header>
-
-    <section>
-        <h2>Calcula el area de un cuadrado</h2>
-
-        <form action="">
-            <label for="InputCuadrado">Escribe una medida</label>
-            <input id="InputCuadrado" type="number">
-            <button type="button" onclick="calcularPerimetro()">Calcula el perimetro</button>
-            <button type="button" onclick="calcularArea()">Calcula el area</button>
+    <div class="content">
+        <div class="cuadrado">
+          <h4>Calcula el area de un cuadrado</h4>
+          <form action="">
+            <div class="grupform">
+                <label for="InputCuadrado"></label>
+                <input id="InputCuadrado" type="number" placeholder="Escribe una medida">
+            </div>
+            <div class="grupbutton">
+                <button type="button" onclick="calcularPerimetro()">Calcula el perimetro</button>
+                <button type="button" onclick="calcularArea()">Calcula el area</button>
+            </div>
         </form>
-    </section>
-
+        </div>
+        <div class="triangulo">
+            <div class="caja">
+                <h4>Calcula el area de un triangulo</h4>
+            <form action="">
+                <div class="grupform">
+                    <label for="ladoA"></label>
+                    <input id="ladoA" type="number" placeholder="Lado A">
+                </div>
+                <div class="grupform">
+                    <label for="ladoB"></label>
+                    <input id="ladoB" type="number" placeholder="Lado B">
+                </div>
+                <div class="grupform">
+                    <label for="base"></label>
+                    <input id="base" type="number" placeholder="Base">
+                </div>
+                <div class="grupform">
+                    <label for="altura"></label>
+                    <input id="altura" type="number" placeholder="Altura">
+                </div>
+                <div class="grupbutton">
+                    <button type="button" onclick="calcularPerimetroTriangulo()">Calcula el perimetro</button>
+                    <button type="button" onclick="calcularAreaTriangulo()">Calcula el area</button>
+                </div>
+            </div>
+            </form>
+        </div>
+        <div class="circulo">
+            <h4>Calcula el area de un circulo</h4>
+            <form action="">
+                <div class="grupform">
+                    <label for="InputCirculo"></label>
+                    <input id="InputCirculo" type="number" placeholder="Escribe una medida">
+                </div>
+                <div class="grupbutton">
+                    <button type="button" onclick="calcularCirculoP()">Calcula el perimetro</button>
+                    <button type="button" onclick="calcularCirculoA()">Calcula el area</button>
+                </div>
+            </form>
+        </div>
+      </div>
 
     <script src="figurasGeometricas.js"></script>
 </body>
