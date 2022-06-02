@@ -8,3 +8,8 @@
 - Quinto paso: Crear formulario
 ![Image text](https://github.com/Yokaleis/Curso-Practico-de-JavaScript-con-Platzi/blob/main/img/Captura%20web_1-6-2022_212429_.jpeg)
 
+# Segundo Taller:
+- Primer paso: Definir formulas
+- Segundo paso: Implementar las formulas en JS
+- Tercer paso: Crear las funciones
+- Cuarto paso: Integrar HTML con JS 
