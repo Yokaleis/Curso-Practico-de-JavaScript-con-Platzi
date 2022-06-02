@@ -5,8 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porcentajes y descuentos</title>
+    <link rel="stylesheet" href="descuentos.css">
 </head>
 <body>
+    <header class="header-ui">
+        <h1>Porcentajes y descuentos de productos</h1>
+        <p>Segundo Taller</p>
+    </header>
+    <div class="content">
+        <div class="precioscaja">
+          <h4>Calcula el precio a pagar de tus productos</h4>
+          <form action="">
+            <div class="grupform">
+                <label for="InputPrecio"></label>
+                <input id="InputPrecio" type="number" placeholder="Escribe el precio">
+            </div>
+            <div class="grupform">
+                <label for="InputDescuento"></label>
+                <input id="InputDescuento" type="number" placeholder="Escribe el descuento">
+            </div>
+            <div class="grupbutton">
+                <button type="button" onclick="calcularDescuento()">Calcular descuento</button>
+            </div>
+            <p id="resultado"></p>
+        </form>
+        </div>
+      </div>
     <script src="descuentos.js"></script>
 </body>
 </html>
