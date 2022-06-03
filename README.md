@@ -11,3 +11,7 @@
 # Segundo Taller:
 - Primer paso: Definir formulas y crear las funciones 
 - Segundo paso: Escribir HTML desde JS 
+
+# Tercer Taller:
+- Primer paso: Definir formulas y crear las funciones 
+- Segundo paso: Escribir HTML desde JS 
