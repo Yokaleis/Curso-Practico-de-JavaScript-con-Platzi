@@ -1,17 +1,22 @@
-const primeraLista = [
-    100,
-    200,
-    300,
-    400,
-    500,
-    600,
-];
 
-let sumaLista = 0;
 
-for (let i = 0; i < primeraLista.length; i++) {
-    sumaLista = sumaLista + primeraLista[i];
-};
+function cacularMediaAritmetica(lista) {
 
-const promedio = sumaLista / primeraLista.length;
+    /* let sumaLista = 0;
 
+    for (let i = 0; i < lista.length; i++) {
+        sumaLista = sumaLista + lista[i];
+    };
+ */
+
+//Alternativa al ciclo for
+    const sumaLista = lista.reduce(
+        function (valorAcumulado = 0, nuevoElemento) {
+            return valorAcumulado + nuevoElemento;
+        }
+    );
+
+    const promedio = sumaLista / lista.length;
+
+    return promedio;
+}
